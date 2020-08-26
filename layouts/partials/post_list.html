@@ -11,11 +11,17 @@
         </h3>
 	{{ end }}
         <div class="post-content-preview">
-	{{ with .Description }}
+	    {{ with .Description }}
             {{ . }}
         {{ else }}
             {{ .Summary}}
-       {{ end }}
+        {{ end }}
+       <!-- {{ with .Summary }}
+            {{ . }}
+        {{ else }}
+            {{ .Description}}
+        {{ end }} -->
+
         </div>
     </a>
     <p class="post-meta">
