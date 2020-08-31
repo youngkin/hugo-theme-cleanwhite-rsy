@@ -55,9 +55,9 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                {{ if not (eq (.Param "showtoc") false) }}
+                {{ if (.Params.toc) }}
                 <header>
-                    <h2>TOC</h2>
+                    <h2>Contents</h2>
                 </header>
                 {{.TableOfContents}}
                 {{ end }}
